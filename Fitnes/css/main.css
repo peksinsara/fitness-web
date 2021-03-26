@@ -1,0 +1,165 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+ 
+html {
+  height: 100%;
+}
+body {
+
+                background-repeat: no-repeat;
+  background-position: right;
+  text-align: center;
+  height: 105vh;
+  width: 100%;
+  background-size:65%;
+
+  font-family: 'PT Sans', Helvetica, sans-serif;
+  color: #666;
+  margin: 0;
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5em
+}
+ 
+ 
+.pt-page {
+   width: 60%;
+  height:  100%;
+  position: absolute;
+  opacity: 0;
+  top: auto;
+  left: 0;  
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+ 
+.pt-page * {
+  height: 0;
+}
+
+.pt-page .portfolio-grid,
+.pt-page .blog-masonry {
+  display: none;
+}
+ 
+
+.pt-page-current,
+.no-js .pt-page {
+  visibility: visible;
+  z-index: 90;
+  opacity: 1;
+  height: auto;
+  min-height: 100%;
+}
+
+.pt-page.pt-page-current .portfolio-grid,
+.pt-page.pt-page-current .blog-masonry {
+  display: block;
+}
+
+.pt-page-current *,
+.no-js .pt-page * {
+  height: auto;
+}
+
+ 
+.subpages {
+  background: blue;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective: 1500px;
+  -moz-perspective: 1500px;
+  perspective: 1500px;
+}
+ 
+.site-main {
+  margin-top: 10%;
+   width: 100%;
+   padding-top: 10%; 
+  height: 100%;
+  padding: 2%;
+   position: relative;
+ }
+
+ 
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    width: 26%;
+  }
+
+  .site-main {
+    margin-left: 26%;
+  }
+
+   
+@media only screen and (max-width: 991px) {
+  .mobile-visible {
+    display: block;
+    visibility: visible;
+  }
+ 
+ 
+
+  .subpage-block {
+    margin-bottom: 40px;
+  }
+
+  .site-main {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+ 
+@media only screen and (max-width: 769px) {
+  .portfolio-grid figure {
+    width: 50%;
+  }
+
+  .home-page-block h2 {
+    font-size: 50px;
+  }
+
+  .home-page-description {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-masonry .item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .portfolio-grid figure {
+    width: 100%;
+  }
+
+  .home-page-block h2 {
+    font-size: 40px;
+  }
+
+  .home-page-description {
+    font-size: 16px;
+  }
+}
+ 
